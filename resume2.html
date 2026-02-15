@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anjali | Portfolio Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#6C63FF;
+    --secondary:#4A47A3;
+    --light-bg:#f5f7ff;
+    --dark-bg:#111827;
+    --card-bg:rgba(255,255,255,0.7);
+    --text:#333;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:var(--light-bg);
+    color:var(--text);
+    transition:0.4s ease;
+}
+
+.dark{
+    background:var(--dark-bg);
+    color:#f1f1f1;
+}
+
+.dark .glass{
+    background:rgba(255,255,255,0.05);
+}
+
+.nav{
+    position:fixed;
+    width:100%;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
+}
+
+.dark .nav{
+    background:rgba(0,0,0,0.6);
+}
+
+.nav h3{
+    margin:0;
+}
+
+.nav a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.toggle{
+    cursor:pointer;
+    padding:8px 15px;
+    border-radius:20px;
+    background:var(--primary);
+    color:white;
+    font-size:13px;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#6C63FF,#4A47A3);
+    color:white;
+    flex-direction:column;
+}
+
+.hero img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero a{
+    color:white;
+    text-decoration:underline;
+}
+
+.section{
+    max-width:1100px;
+    margin:80px auto;
+    padding:40px;
+}
+
+.glass{
+    background:var(--card-bg);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.project-card{
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+    margin-bottom:30px;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(108,99,255,0.3);
+}
+
+.badge{
+    background:var(--primary);
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.skills span{
+    display:inline-block;
+    padding:8px 15px;
+    margin:6px;
+    background:var(--primary);
+    color:white;
+    border-radius:25px;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    transform:scale(1.1);
+    background:var(--secondary);
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:0.8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:var(--primary);
+    color:white;
+}
+
+@media(max-width:768px){
+    .section{padding:20px;}
+    .hero h1{font-size:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <h3>
+        <a href="https://www.linkedin.com/in/anjali6pawar" target="_blank">
+            Anjali
+        </a>
+    </h3>
+    <div class="toggle" onclick="toggleDark()">Toggle Theme</div>
+</div>
+
+<div class="hero">
+    <img src="formalpic.png" alt="Anjali">
+    <h1>Anjali</h1>
+    <p>
+        anjali.0359@gmail.com |
+        <a href="https://www.linkedin.com/in/anjali6pawar" target="_blank">
+            LinkedIn
+        </a>
+    </p>
+    <p>Gurugram, Haryana</p>
+</div>
+
+<div class="section glass fade">
+<h2>Objective</h2>
+<p>
+Detail-oriented B.Sc. Mathematics graduate with a strong academic foundation and basic proficiency in MS Excel, Word, and 
+Power BI. Possesses good communication and problem-solving skills, with a willingness to learn, adapt, and contribute 
+effectively in a collaborative work environment.
+</p>
+</div>
+
+<div class="section glass fade">
+<h2>Education</h2>
+<ul>
+<li>B.Sc. (Hons) Mathematics | Daulat Ram College, University of Delhi | 2022-2025</li>
+<li>Class 12th (PCM) | Universal Public School, CBSE | 2021–2022</li>
+<li>Class 10th | Universal Public School, CBSE | 2020–2021</li>
+</ul>
+</div>
+
+<div class="section glass fade">
+<h2>Experience</h2>
+<p><b>Extended Student Union Team Member | DRC, DU | Aug 2023 – Apr 2024</b></p>
+<ul>
+<li>Coordinated, backstage activities, and logistics to support smooth and timely event operations.</li>
+<li>Managed guest handling and on-ground coordination while balancing multiple tasks.</li>
+</ul>
+</div>
+
+<div class="section glass fade">
+<h2>Virtual Experience</h2>
+<ul>
+<li>Siemens Mobility – Project Manager Job Simulation | Forage | Dec 2025</li>
+<li>Vista Equity Partners – AI in Action Job Simulation | Forage | Dec 2025</li>
+</ul>
+</div>
+
+<div class="section glass fade">
+<h2>Certification</h2>
+<ul>
+<li>Introduction to MS Excel – Simplilearn | Jan 2026</li>
+<li>Fundamentals of Human Resources – Alison (Learner Record PDF Available) | Jan 2026</li>
+<li>Prompt Engineering: Shaping Better AI Responses | IBM SkillsBuild (Badge Earned) | Jan 2026</li>
+</ul>
+</div>
+
+<div class="section fade">
+<div class="project-card glass">
+<h2><a href="https://drive.google.com/file/d/1W8ElJci5LgVk167vNAWI-4bya0RawScW/view" target="_blank">HR Analytics Dashboard (Power BI)</a> <span class="badge">View Project</span></h2>
+<ul>
+<li>Developed an executive-style dashboard analyzing headcount, attrition, workforce demographics, and recruitment effectiveness.</li>
+<li>Converted raw employee data into actionable insights to support HR reporting and workforce planning.</li>
+<li>Utilized DAX, Power BI, and Excel for dynamic reporting.</li>
+</ul>
+</div>
+
+<div class="project-card glass">
+<h2><a href="https://drive.google.com/file/d/1nZ17mAyEY6Bn4a-6Sn8FDe6IG5M8dnc4/view" target="_blank">Sales Dashboard (Power BI / Excel)</a> <span class="badge">View Project</span></h2>
+<ul>
+<li>Designed a comprehensive sales dashboard tracking revenue, product performance, and regional trends.</li>
+<li>Automated key metrics and visualizations for executive decision-making.</li>
+<li>Enhanced data-driven insights using filters, slicers, and interactive reports.</li>
+</ul>
+</div>
+</div>
+
+<div class="section glass fade">
+<h2>Skills</h2>
+<div class="skills">
+<span>MS Excel</span>
+<span>MS Word</span>
+<span>PowerPoint</span>
+<span>Power BI</span>
+<span>Dashboard Operations</span>
+<span>Google forms</span>
+<span>Communication</span>
+<span>Organizational Skills</span>
+<span>Time Management</span>
+<span>Critical Thinking</span>
+<span>Human Resources</span>
+</div>
+</div>
+
+<div class="section glass fade">
+<h2>Volunteering & Campus Involvement</h2>
+<ul>
+<li>ECA Management Volunteer – NAAC Visit Coordination</li>
+<li>Creative Team – Ekalavya 2023–2024</li>
+<li>Zenith (Dance Society) – Manjari 2023</li>
+<li>Creative & Management Team – MATHSHOT 2.0</li>
+</ul>
+</div>
+
+<div class="section glass fade">
+<h2>Achievements</h2>
+<ul>
+<li>2nd Position – District Taekwondo Championship (2015)</li>
+<li>2nd Position – SOF NSO (Science Olympiad Foundation) | Class 8</li>
+<li>3rd Position – SOF IMO (Science Olympiad Foundation) | Class 10</li>
+<li>2nd Position – Class XII CBSE Board Examination, school level</li>
+</ul>
+</div>
+
+<footer>
+© 2026 Anjali | Portfolio Resume
+</footer>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+    faders.forEach(el=>{
+        if(el.getBoundingClientRect().top < window.innerHeight-100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
